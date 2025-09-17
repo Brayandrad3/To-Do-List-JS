@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="img/lista-de-verificacion.png" type="image/x-icon">
+</head>
+
+<body>
+
+    <section id="global-content">
+        <h1>To Do List</h1>
+        <hr>
+        <form action="#">
+            <label for="to-do">Add Item</label>
+            <div class="field">
+                <input type="text" id="to-do" placeholder="Write a new task...">
+                <button type="submit" id="add" class="add-btn">+</button>
+            </div>
+        </form>
+        <hr>
+
+        <div id="cont-to-do-list">
+            <h2>To Do</h2>
+            <div class="item-to-do">
+                <input type="checkbox">
+                <p>Item list 1</p>
+                <button class="delete-btn">X</button>
+            </div>
+        </div>
+
+        <hr>
+
+        <div id="cont-complete">
+            <h2>Completed</h2>
+            <div class="item-to-do">
+                <input type="checkbox">
+                <p>Item list 1</p>
+                <button class="delete-btn">X</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- JS -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Schoolbell&display=swap');
+
+:root {
+    --yellow: #FFF9C4;
+    --green: #A5D6A7;
+    --orenge: #FFCC80;
+    --blue: #90CAF9;
+    --white: #FFFFFF;
+    --grey: #f0f0f0;
+    --dark-grey: #555;
+    --red: #E57373;
+    --black: #000000;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Caveat Brush", cursive;
+}
+
+p,
+a,
+button,
+li,
+label,
+input,
+select,
+textarea,
+span {
+    font-family: "Schoolbell", cursive;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--white);
+}
+
+#global-content {
+    width: 700px;
+    max-width: 100%;
+    text-align: center;
+    box-shadow: 0 0 8px 2px #00000033;
+    border-radius: 10px;
+    padding: 20px 20px;
+    background: var(--yellow);
+    margin: 50px 0;
+}
+
+hr{
+    margin: 30px 0;
+}
+
+form {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+form label {
+    display: block;
+    text-align: left;
+    margin-bottom: 5px;
+    font-size: 18px;
+    color: var(--);
+}
+
+form .field {
+    display: flex;
+    gap: 10px;
+}
+
+form input {
+    flex: 1;
+    padding: 10px;
+    border: 2px solid var(--dark-grey);
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.add-btn {
+    padding: 10px 15px;
+    border: none;
+    background: var(--blue);
+    color: var(--white);
+    font-size: 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.add-btn:hover {
+    background: #64B5F6;
+    transform: scale(1.1);
+}
+
+#cont-to-do-list {
+    background: var(--orenge);
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+#cont-complete {
+    background: var(--green);
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.item-to-do {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--grey);
+    border-radius: 8px;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+/* Checkbox personalizado */
+.item-to-do input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    accent-color: var(--blue);
+    /* modern browsers */
+    cursor: pointer;
+}
+
+.item-to-do p {
+    flex: 1;
+    margin: 0 10px;
+    text-align: left;
+}
+
+/* Botón de eliminar */
+.delete-btn {
+    border: none;
+    background: var(--red);
+    color: var(--white);
+    font-size: 16px;
+    padding: 6px 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.delete-btn:hover {
+    background: #EF5350;
+    transform: scale(1.1);
+}
