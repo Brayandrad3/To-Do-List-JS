@@ -115,4 +115,24 @@ function eventsToItem(item) {
 }
 
 
+const bntStyle = document.getElementById("change-style");
 
+bntStyle.addEventListener('click', () => {
+
+    const linkCss = document.getElementById("enlace-estilos");
+
+
+    if (linkCss.getAttribute("href") == "css/style.css") {
+
+        linkCss.setAttribute("href", "css/style-noche.css");
+        bntStyle.textContent = "Modo Día";
+
+    }
+    else {
+        linkCss.setAttribute("href", "css/style.css");
+        bntStyle.textContent = "Modo Noche";
+    }
+
+
+
+})

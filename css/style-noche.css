@@ -25,12 +25,12 @@ span {
 
 :root {
     --yellow: #FFF9C4;
-    --green: #A5D6A7;
-    --orange: #FFCC80;
-    --blue: #90CAF9;     
-    --white: #FFFFFF;
-    --grey: #f0f0f0;
-    --dark-grey: #555;
+    --green: #388E3C;
+    --orange: #F57C00;
+    --blue: #1976D2;     
+    --white: #E0E0E0;
+    --grey: #333;
+    --dark-grey: #222;
     --red: #E57373;
     --black: #000000;
 }
@@ -45,26 +45,27 @@ span {
 
 /* Fondo general */
 body {
-    background-color: #FAF3E0;
+    background-color: #121212;
     display: flex;
     justify-content: center;
     align-items: flex-start;
     min-height: 100vh;
     padding: 2rem;
+    color: var(--white);
 }
 
 /* Contenedor global */
 #global-content {
-    background: #FFFDF7;
+    background: #1E1E1E;
     padding: 2rem;
     border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.6);
     width: 400px;
 }
 
 /* Títulos */
 h1, h2, h3 {
-    color: #333;
+    color: var(--white);
     margin-bottom: 0.5rem;
     text-align: center;
 }
@@ -73,7 +74,7 @@ hr {
     margin: 1rem 0;
     border: none;
     height: 1px;
-    background: #ddd;
+    background: #333;
 }
 
 /* Input + botón agregar */
@@ -86,39 +87,28 @@ form {
 #to-do-input {
     flex: 1;
     padding: 0.5rem;
-    border: 2px solid #FFD56F;
+    border: 2px solid var(--blue);
     border-radius: 8px;
     outline: none;
     font-size: 1rem;
+    background: #2A2A2A;
+    color: var(--white);
 }
 
 #add-btn {
-    background-color: #FFD56F;
+    background-color: var(--blue);
     border: none;
     margin-left: 0.5rem;
     padding: 0.5rem 1rem;
     border-radius: 8px;
     font-size: 1.2rem;
     cursor: pointer;
+    color: var(--white);
     transition: background 0.2s ease-in-out;
 }
 
 #add-btn:hover {
-    background-color: #F4C430;
-}
-
-#cont-to-do-list{
-    background: var(--orange);
-    border-radius: 10px;
-    padding: 15px;
-    margin-bottom: 20px;
-}
-
-#cont-completed-list{
-    background: var(--green);
-    border-radius: 10px;
-    padding: 15px;
-    margin-bottom: 20px;
+    background-color: #42A5F5;
 }
 
 /* Estilo de cada item */
@@ -126,7 +116,7 @@ form {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: #FFF9E6;
+    background: #2A2A2A;
     padding: 0.5rem 1rem;
     border-radius: 8px;
     margin-bottom: 0.5rem;
@@ -141,7 +131,7 @@ form {
 .item-to-do p {
     flex: 1;
     margin-left: 0.5rem;
-    color: #333;
+    color: var(--white);
 }
 
 /* Checkbox */
@@ -152,7 +142,7 @@ form {
 
 /* Botón eliminar */
 .item-to-do button {
-    background: #FF6B6B;
+    background: var(--red);
     border: none;
     color: white;
     padding: 0.3rem 0.7rem;
@@ -162,7 +152,7 @@ form {
 }
 
 .item-to-do button:hover {
-    background: #E63946;
+    background: #C62828;
 }
 
 /* Lista completada */
@@ -176,15 +166,15 @@ form {
     bottom: 10px;
     right: 10px;
     padding: 20px;
-    background: var(--black);
-    color: var(--white)  ;
+    background: var(--white);
+    color: var(--black);
     cursor: pointer;
     border-radius: 20px;
-    border: 1px solid #333;
+    border: 1px solid #555;
     transition: background 0.2s;
 }
 
 #change-style:hover {
-    background: #555;
+    background: #999;
     transform: translateY(-4px);
 }
