@@ -111,6 +111,20 @@ form {
     background-color: #42A5F5;
 }
 
+#cont-to-do-list{
+    background: var(--orange);
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+#cont-completed-list{
+    background: var(--green);
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
 /* Estilo de cada item */
 .item-to-do {
     display: flex;
