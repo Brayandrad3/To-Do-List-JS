@@ -60,7 +60,8 @@ body {
     padding: 2rem;
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.6);
-    width: 400px;
+    width: 100%;
+    max-width: 600px;
 }
 
 /* Títulos */
@@ -142,10 +143,11 @@ form {
 }
 
 /* Texto de la tarea */
-.item-to-do p {
-    flex: 1;
-    margin-left: 0.5rem;
+#cont-to-do-list p, #cont-completed-list p{
+    margin: 0 0.5rem 0 0.5rem;
     color: var(--white);
+    word-break: break-word;
+    width: 90%;
 }
 
 /* Checkbox */
