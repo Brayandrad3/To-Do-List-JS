@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Schoolbell&display=swap');
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Caveat Brush", cursive;
+}
+
+p,
+a,
+button,
+li,
+label,
+input,
+select,
+textarea,
+span {
+    font-family: "Schoolbell", cursive;
+}
+
+:root {
+    --yellow: #FFF9C4;
+    --green: #A5D6A7;
+    --orange: #FFCC80;
+    --blue: #90CAF9;     
+    --white: #FFFFFF;
+    --grey: #f0f0f0;
+    --dark-grey: #555;
+    --red: #E57373;
+    --black: #000000;
+}
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Fondo general */
+body {
+    background-color: #FAF3E0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    padding: 2rem;
+}
+
+/* Contenedor global */
+#global-content {
+    background: #FFFDF7;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    width: 400px;
+}
+
+/* Títulos */
+h1, h2, h3 {
+    color: #333;
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
+hr {
+    margin: 1rem 0;
+    border: none;
+    height: 1px;
+    background: #ddd;
+}
+
+/* Input + botón agregar */
+form {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+#to-do-input {
+    flex: 1;
+    padding: 0.5rem;
+    border: 2px solid #FFD56F;
+    border-radius: 8px;
+    outline: none;
+    font-size: 1rem;
+}
+
+#add-btn {
+    background-color: #FFD56F;
+    border: none;
+    margin-left: 0.5rem;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background 0.2s ease-in-out;
+}
+
+#add-btn:hover {
+    background-color: #F4C430;
+}
+
+#cont-to-do-list{
+    background: var(--orange);
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+#cont-completed-list{
+    background: var(--green);
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+/* Estilo de cada item */
+.item-to-do {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #FFF9E6;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    margin-bottom: 0.5rem;
+    transition: transform 0.2s;
+}
+
+.item-to-do:hover {
+    transform: translateX(4px);
+}
+
+/* Texto de la tarea */
+.item-to-do p {
+    flex: 1;
+    margin-left: 0.5rem;
+    color: #333;
+}
+
+/* Checkbox */
+.item-to-do input {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+/* Botón eliminar */
+.item-to-do button {
+    background: #FF6B6B;
+    border: none;
+    color: white;
+    padding: 0.3rem 0.7rem;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.2s ease-in-out;
+}
+
+.item-to-do button:hover {
+    background: #E63946;
+}
+
+/* Lista completada */
+#cont-completed-list .item-to-do p{
+    text-decoration: line-through;
+}
+
